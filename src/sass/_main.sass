@@ -1,9 +1,87 @@
 // Normally mainpage styles
-// body
-// 	+s(coderiver)
-div
-	+r(1024)
+
+//navigation
+.top-menu
+	+r(1040)
+		width: 100%
+		background-color: black
+		margin-top: 48px
+		padding-top: 0
+
+.top-menu > li
+	+r(1100)
+		padding: 3px 10px
+	+r(1040)
 		display: block
-p
-	+r(1024)
-		background: red
+		text-align: center
+		padding: 5px 0px !important
+		border-bottom: 1px solid #313131
+		a
+			font-size: 18px
+			color: #fff
+			i 
+				display: none
+
+
+.top-menu__with_sub.selected
+	+r(1040)
+		display: block
+		.fa
+			display: none
+		ul
+			position: relative	
+			top: 0
+			width: 100%
+			margin: 0
+			display: block
+			border-radius: 0
+			li
+				text-align: left
+				display: block
+
+			a	
+				font-size: 14px	
+				display: block
+
+
+
+
+
+.l-wrapper
+	position: relative
+	min-width: 320px
+	+box
+	+r(1200)
+		padding: 0 20px
+
+	.b-50 
+		+r(1200)
+			min-height: 374px
+		+r(780)
+			width: 80%	
+			min-height: auto
+			float: none
+			margin: auto
+		+r(600)
+			width: 96%
+
+	.b-65
+		+r(1040)
+			width: 100%		
+			position: absolute !important
+			top: 20px
+			right: 0
+
+	.home-menu__on_hover
+		+r(1200)
+			min-height: 120px
+			padding-bottom: 10px
+		+r(940)
+			min-height: 184px
+		+r(780)
+			min-height: auto		
+		
+
+	.home-menu__on_hover_sub > li	
+		+r(740)
+			display: block			
