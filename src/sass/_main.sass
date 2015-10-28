@@ -32,18 +32,20 @@ p#back-top
 	position: absolute
 	top: 48px
 	width: 100%
-	height: 60px
-	background-color: white
+	min-height: 60px
+	background: url('http://www.old.belpromimpex.by/images/patterns/brushed_alu.png')
 	+r(1040)
 		display: block
 
-.menu-mob
+.menu-mob-btn
 	display: block
 	float: right
-	margin: 30px 30px
+	margin: 17px 30px 0 0
+		
 	span
 		width: 30px
 		height: 3px
+		margin: 12px 0
 		background-color: #333
 		display: block
 		position: relative
@@ -60,12 +62,31 @@ p#back-top
 		&:before
 			top: -9px
 		&:after
-			top: 9px	
+			top: 9px
+.menu-mob	
+	float: none
+	width: 100%		
+	margin: 0
+	background-color: black
+	position: absolute
+	top: 108px
+	left: 0
+	li	
+		display: block
+		text-align: center
+		padding: 5px 0px 
+		a	
+			color: #fff	
+			font-size: 18px	
+		ul
+			display: none	
+				
 .top-menu
 	+r(1040)
 		width: 100%
 		background-color: black
-		margin-top: 48px
+		//margin-top: 48px
+		margin-top: 108px
 		padding-top: 0
 		display: none
 
@@ -87,7 +108,7 @@ p#back-top
 		display: block
 		text-align: center
 		padding: 5px 0px !important
-		border-bottom: 1px solid #313131
+		//border-bottom: 1px solid #313131
 		a
 			font-size: 18px
 			color: #fff
