@@ -6,8 +6,10 @@
 		max-width: 100%
 		height: auto
 
-	.logo-image
-		max-width: none	
+	.logo-image	
+		max-width: none
+		+r(530)
+			max-width: 100%
 
 p#back-top
 	+r(640)
@@ -27,6 +29,7 @@ p#back-top
 		background-color: black
 		margin-top: 48px
 		padding-top: 0
+		display: none
 
 .search-form__b
 	+r(720)
@@ -74,16 +77,16 @@ p#back-top
 				font-size: 14px	
 				display: block
 
-
-
-
-
 .l-wrapper
 	position: relative
 	min-width: 320px
 	+box
 	+r(1200)
 		padding: 0 20px
+
+	.b-35
+		+r(900)
+			width: auto	
 
 	.b-50 
 		+r(1200)
@@ -94,7 +97,12 @@ p#back-top
 			float: none
 			margin: auto
 		+r(600)
-			width: 96%
+			width: 100%
+
+	.home-menu__item
+		+r(600)
+			margin: 15px 0 0
+
 
 	.b-65
 		+r(1040)
@@ -107,6 +115,13 @@ p#back-top
 		+r(1200)
 			min-height: 120px
 			padding-bottom: 10px
+			li
+				position: relative
+				.sq
+					position: absolute
+			a	
+				padding-left: 15px
+
 		+r(940)
 			min-height: 184px
 		+r(780)
@@ -119,6 +134,7 @@ p#back-top
 		+r(740)
 			display: block !important
 			text-align: left
+			
 
 
 
@@ -149,6 +165,24 @@ contacts__header
 	+r(900)
 		margin: 0
 		padding: 0
+		// .bread-menu 
+		// 	li
+		// 		display: none
+		// 		&:first-child
+		// 			display: block
+		// 	.fa
+		// 		display: none
+							
+.product-block
+	+r(900)
+		width: 48%
+		margin:	0 1% 20px
+		.product-link
+			display: none
+	+r(700)
+		width: 100%
+		float: none	
+		margin: 0 0 20px	
 .news__item
 	+prevent-text	
 	.linkk
