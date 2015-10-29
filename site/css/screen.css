@@ -120,6 +120,18 @@
   }
 }
 
+@media only screen and (max-width: 1040px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .top-menu > li {
+    padding: 3px 10px;
+  }
+}
+
 .l-wrapper {
   position: relative;
   min-width: 320px;
