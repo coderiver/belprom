@@ -7,7 +7,16 @@
 		height: auto
 
 	.logo-image	
-		min-width: 270px
+		min-width: 210px
+		+r(600)
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+		+r(410)
+			position: relative
+			top: inherit
+			bottom: inherit
 
 p#back-top
 	+r(640)
@@ -21,6 +30,9 @@ p#back-top
 .navigation
 	.l-wrapper
 		+clr
+		+r(500)
+			padding: 0
+
 
 	.b-35
 		width: 35% 
@@ -28,11 +40,17 @@ p#back-top
 		+r(1100)
 			width: 38%
 		+r(1040)
-			width: 100%
-			position: relative
-			z-index: 100
-		+r(590)
-			padding-right: 180px
+			width: 70%
+		+r(900)
+			width: 60% 	
+		+r(500)
+			width: 100%	
+			.logo
+				padding: 0 20px
+		+r(410)
+			.logo	
+				padding-top: 13px	
+
 
 
 	.b-65
@@ -41,8 +59,13 @@ p#back-top
 		+r(1100)
 			width: 62%
 		+r(1040)
-			width: 100%
-			position: absolute
+			width: 30%
+		+r(900)
+			width: 40%
+		+r(500)
+			width: 100%	
+			background-color: #FFF	
+			margin-top: -2px
 
 
 
@@ -97,6 +120,8 @@ p#back-top
 	top: 68px
 	left: 0
 	display: none
+	+r(500)
+		top: 136px
 	li	
 		display: block
 		text-align: center
@@ -124,7 +149,10 @@ p#back-top
 		a.active
 			margin: 0 0 0 30px
 
-	+r(595)
+	+r(500)
+		position: absolute
+		left: 20px
+		right: inherit
 				
 
 .top-menu

@@ -3,7 +3,22 @@
   height: auto;
 }
 .l-wrapper .logo-image {
-  min-width: 270px;
+  min-width: 210px;
+}
+@media only screen and (max-width: 600px) {
+  .l-wrapper .logo-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .l-wrapper .logo-image {
+    position: relative;
+    top: inherit;
+    bottom: inherit;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -31,6 +46,11 @@
   display: table;
   clear: both;
 }
+@media only screen and (max-width: 500px) {
+  .navigation .l-wrapper {
+    padding: 0;
+  }
+}
 .navigation .b-35 {
   width: 35%;
   min-height: 69px;
@@ -42,14 +62,25 @@
 }
 @media only screen and (max-width: 1040px) {
   .navigation .b-35 {
-    width: 100%;
-    position: relative;
-    z-index: 100;
+    width: 70%;
   }
 }
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 900px) {
   .navigation .b-35 {
-    padding-right: 180px;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation .b-35 {
+    width: 100%;
+  }
+  .navigation .b-35 .logo {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .navigation .b-35 .logo {
+    padding-top: 13px;
   }
 }
 .navigation .b-65 {
@@ -63,8 +94,19 @@
 }
 @media only screen and (max-width: 1040px) {
   .navigation .b-65 {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .navigation .b-65 {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation .b-65 {
     width: 100%;
-    position: absolute;
+    background-color: #FFF;
+    margin-top: -2px;
   }
 }
 
@@ -129,6 +171,11 @@
   left: 0;
   display: none;
 }
+@media only screen and (max-width: 500px) {
+  .menu-mob {
+    top: 136px;
+  }
+}
 .menu-mob li {
   display: block;
   text-align: center;
@@ -169,6 +216,13 @@
   }
   .lang a.active {
     margin: 0 0 0 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .lang {
+    position: absolute;
+    left: 20px;
+    right: inherit;
   }
 }
 
