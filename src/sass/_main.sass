@@ -17,6 +17,14 @@
 			position: relative
 			top: inherit
 			bottom: inherit
+	.l-wrapper
+		min-width: auto
+		+r(360)
+			padding: 0
+	.footer
+		+r(360)
+			padding: 0	
+
 
 p#back-top
 	+r(640)
@@ -53,8 +61,6 @@ p#back-top
 				.logo	
 					padding-top: 13px	
 
-
-
 		.b-65
 			width: 65%	
 			min-height: 69px
@@ -69,14 +75,17 @@ p#back-top
 				background-color: #FFF	
 				margin-top: -2px
 
-
-
+#slide_sale
+	+r(900)
+		display: none
 
 //BEGIN HOME PAGE
 //navigation
 .header-bg
 	+r(1040)
 		padding: 59px 0 10px
+	+r(500)
+		padding-top: 127px	
 
 
 .menu-mob-btn
@@ -132,6 +141,7 @@ p#back-top
 		a	
 			color: #fff	
 			font-size: 18px	
+			display: block
 		ul
 			display: none	
 				
@@ -142,15 +152,15 @@ p#back-top
 		display: none	
 .lang
 	+r(1040)
-		right: 165px
+		right: 158px
 		top: 28px
 		a.active
 			padding: 0 6px 1px
-			margin: 0 40px
+			margin: 0 45px
+		a
+			font-size: 15px	
 	+r(640)
 		right: 140px	
-		a.active
-			margin: 0 0 0 30px
 
 	+r(500)
 		position: absolute
@@ -221,10 +231,13 @@ p#back-top
 			min-height: auto
 			float: none
 			margin: auto
-		+r(600)
-			width: 100%
+		+r(500)
+			width: 90%
 
 	.home-menu__item
+		+r(780)
+			br
+				display: none
 		+r(600)
 			margin: 15px 0 0
 
@@ -246,6 +259,9 @@ p#back-top
 					position: absolute
 			a	
 				padding-left: 15px
+		+r(780)
+			li > .sq
+				top: 0		
 
 		+r(940)
 			min-height: 184px
@@ -256,9 +272,14 @@ p#back-top
 		
 
 	.home-menu__on_hover_sub > li	
-		+r(740)
+		+r(780)
 			display: block !important
 			text-align: left
+			margin-bottom: 12px
+			a
+				font-size: 13px 
+				margin-bottom: 13
+				line-height: 1.4
 			
 
 
@@ -414,4 +435,5 @@ ul.page-categories, ul.page-categoriesShini
 .footer-links a
 	+r(900)	
 		display: block
-		margin-bottom: 10px		
+		margin-bottom: 10px	
+		font-size: 14px	
