@@ -30,28 +30,20 @@
 
 @media only screen and (max-width: 1040px) {
   .header-bg {
-    padding: 120px 0 10px;
-  }
-}
-
-.menu-mob-wrap {
-  display: none;
-  position: absolute;
-  top: 48px;
-  width: 100%;
-  min-height: 60px;
-  background: url("http://www.old.belpromimpex.by/images/patterns/brushed_alu.png");
-}
-@media only screen and (max-width: 1040px) {
-  .menu-mob-wrap {
-    display: block;
+    padding: 59px 0 10px;
   }
 }
 
 .menu-mob-btn {
-  display: block;
-  float: right;
-  margin: 17px 30px 0 0;
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+@media only screen and (max-width: 1040px) {
+  .menu-mob-btn {
+    display: block;
+  }
 }
 .menu-mob-btn span {
   width: 30px;
@@ -85,13 +77,19 @@
   margin: 0;
   background-color: black;
   position: absolute;
-  top: 108px;
+  top: 48px;
   left: 0;
+  display: none;
+}
+@media only screen and (max-width: 1040px) {
+  .menu-mob {
+    display: block;
+  }
 }
 .menu-mob li {
   display: block;
   text-align: center;
-  padding: 5px 0px;
+  padding: 2px 0px;
 }
 .menu-mob li a {
   color: #fff;
@@ -102,73 +100,23 @@
 }
 
 @media only screen and (max-width: 1040px) {
-  .top-menu {
-    width: 100%;
-    background-color: black;
-    margin-top: 108px;
-    padding-top: 0;
+  .search-form__b {
     display: none;
   }
 }
-
 @media only screen and (max-width: 720px) {
   .search-form__b {
     display: none;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1040px) {
   .lang {
-    right: 100px;
+    right: 175px;
   }
   .lang a.active {
     padding: 0 6px 1px;
     margin: 0 40px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .top-menu > li {
-    padding: 3px 10px;
-  }
-}
-@media only screen and (max-width: 1040px) {
-  .top-menu > li {
-    display: block;
-    text-align: center;
-    padding: 5px 0px !important;
-  }
-  .top-menu > li a {
-    font-size: 18px;
-    color: #fff;
-  }
-  .top-menu > li a i {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1040px) {
-  .top-menu__with_sub.selected {
-    display: block;
-  }
-  .top-menu__with_sub.selected .fa {
-    display: none;
-  }
-  .top-menu__with_sub.selected ul {
-    position: relative;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    display: block;
-    border-radius: 0;
-  }
-  .top-menu__with_sub.selected ul li {
-    text-align: left;
-    display: block;
-  }
-  .top-menu__with_sub.selected ul a {
-    font-size: 14px;
-    display: block;
   }
 }
 

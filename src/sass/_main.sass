@@ -25,23 +25,16 @@ p#back-top
 //navigation
 .header-bg
 	+r(1040)
-		padding: 120px 0 10px
+		padding: 59px 0 10px
 
-.menu-mob-wrap
-	display: none
-	position: absolute
-	top: 48px
-	width: 100%
-	min-height: 60px
-	background: url('http://www.old.belpromimpex.by/images/patterns/brushed_alu.png')
-	+r(1040)
-		display: block
 
 .menu-mob-btn
-	display: block
-	float: right
-	margin: 17px 30px 0 0
-		
+	display: none
+	position: absolute
+	top: 4px
+	right: 30px
+	+r(1040)
+		display: block
 	span
 		width: 30px
 		height: 3px
@@ -63,78 +56,83 @@ p#back-top
 			top: -9px
 		&:after
 			top: 9px
+
 .menu-mob	
 	float: none
 	width: 100%		
 	margin: 0
 	background-color: black
 	position: absolute
-	top: 108px
+	top: 48px
 	left: 0
+	display: none
+	+r(1040)
+		display: block
 	li	
 		display: block
 		text-align: center
-		padding: 5px 0px 
+		padding: 2px 0px 
 		a	
 			color: #fff	
 			font-size: 18px	
 		ul
 			display: none	
 				
-.top-menu
-	+r(1040)
-		width: 100%
-		background-color: black
-		//margin-top: 48px
-		margin-top: 108px
-		padding-top: 0
-		display: none
-
 .search-form__b
+	+r(1040)
+		display: none
 	+r(720)
 		display: none	
 .lang
-	+r(720)
-		right: 100px
+	+r(1040)
+		right: 175px
 		a.active
 			padding: 0 6px 1px
 			margin: 0 40px
 
+// .top-menu
+// 	+r(1040)
+// 		width: 100%
+// 		background-color: black
+// 		//margin-top: 48px
+// 		margin-top: 108px
+// 		padding-top: 0
+// 		display: none
 
-.top-menu > li
-	+r(1100)
-		padding: 3px 10px
-	+r(1040)
-		display: block
-		text-align: center
-		padding: 5px 0px !important
-		//border-bottom: 1px solid #313131
-		a
-			font-size: 18px
-			color: #fff
-			i 
-				display: none
+// .top-menu > li
+// 	+r(1100)
+// 		padding: 3px 10px
+// 	+r(1040)
+// 		display: block
+// 		text-align: center
+// 		padding: 5px 0px !important
+// 		//border-bottom: 1px solid #313131
+// 		a
+// 			font-size: 18px
+// 			color: #fff
+// 			i 
+// 				display: none
 
 
-.top-menu__with_sub.selected
-	+r(1040)
-		display: block
-		.fa
-			display: none
-		ul
-			position: relative	
-			top: 0
-			width: 100%
-			margin: 0
-			display: block
-			border-radius: 0
-			li
-				text-align: left
-				display: block
+// .top-menu__with_sub.selected
+// 	+r(1040)
+// 		display: block
+// 		.fa
+// 			display: none
+// 		ul
+// 			position: relative	
+// 			top: 0
+// 			width: 100%
+// 			margin: 0
+// 			display: block
+// 			border-radius: 0
+// 			li
+// 				text-align: left
+// 				display: block
 
-			a	
-				font-size: 14px	
-				display: block
+// 			a	
+// 				font-size: 14px	
+// 				display: block
 
 .l-wrapper
 	position: relative
