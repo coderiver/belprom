@@ -7,9 +7,7 @@
 		height: auto
 
 	.logo-image	
-		max-width: none
-		+r(530)
-			max-width: 100%
+		min-width: 270px
 
 p#back-top
 	+r(640)
@@ -19,6 +17,34 @@ p#back-top
 		right: 18%
 	+r(400)
 		right: 21%	
+
+.navigation
+	.l-wrapper
+		+clr
+
+	.b-35
+		width: 35% 
+		min-height: 69px
+		+r(1100)
+			width: 38%
+		+r(1040)
+			width: 100%
+			position: relative
+			z-index: 100
+		+r(590)
+			padding-right: 180px
+
+
+	.b-65
+		width: 65%	
+		min-height: 69px
+		+r(1100)
+			width: 62%
+		+r(1040)
+			width: 100%
+			position: absolute
+
+
 
 
 //BEGIN HOME PAGE
@@ -31,10 +57,15 @@ p#back-top
 .menu-mob-btn
 	display: none
 	position: absolute
-	top: 4px
-	right: 30px
+	top: 24px
+	right: 15px
+	border: none
+	outline: none
+	background: none
 	+r(1040)
 		display: block
+	+r(595)	
+		right: 15px
 	span
 		width: 30px
 		height: 3px
@@ -63,11 +94,9 @@ p#back-top
 	margin: 0
 	background-color: black
 	position: absolute
-	top: 48px
+	top: 68px
 	left: 0
 	display: none
-	+r(1040)
-		display: block
 	li	
 		display: block
 		text-align: center
@@ -85,10 +114,18 @@ p#back-top
 		display: none	
 .lang
 	+r(1040)
-		right: 175px
+		right: 165px
+		top: 28px
 		a.active
 			padding: 0 6px 1px
 			margin: 0 40px
+	+r(640)
+		right: 140px	
+		a.active
+			margin: 0 0 0 30px
+
+	+r(595)
+				
 
 .top-menu
 	+r(1040)
@@ -161,12 +198,12 @@ p#back-top
 			margin: 15px 0 0
 
 
-	.b-65
-		+r(1040)
-			width: 100%		
-			position: absolute !important
-			top: 20px
-			right: 0
+	// .b-65
+	// 	+r(1040)
+	// 		width: 100%		
+	// 		position: absolute !important
+	// 		top: 20px
+	//		right: 0
 
 	.home-menu__on_hover
 		+r(1200)
