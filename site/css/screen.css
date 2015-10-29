@@ -49,61 +49,63 @@
 @media only screen and (max-width: 500px) {
   .navigation .l-wrapper {
     padding: 0;
+    height: 136px;
   }
 }
-.navigation .b-35 {
+.navigation .l-wrapper .b-35 {
   width: 35%;
   min-height: 69px;
+  position: relative;
 }
 @media only screen and (max-width: 1100px) {
-  .navigation .b-35 {
+  .navigation .l-wrapper .b-35 {
     width: 38%;
   }
 }
 @media only screen and (max-width: 1040px) {
-  .navigation .b-35 {
+  .navigation .l-wrapper .b-35 {
     width: 70%;
   }
 }
-@media only screen and (max-width: 900px) {
-  .navigation .b-35 {
+@media only screen and (max-width: 600px) {
+  .navigation .l-wrapper .b-35 {
     width: 60%;
   }
 }
 @media only screen and (max-width: 500px) {
-  .navigation .b-35 {
+  .navigation .l-wrapper .b-35 {
     width: 100%;
   }
-  .navigation .b-35 .logo {
+  .navigation .l-wrapper .b-35 .logo {
     padding: 0 20px;
   }
 }
 @media only screen and (max-width: 410px) {
-  .navigation .b-35 .logo {
+  .navigation .l-wrapper .b-35 .logo {
     padding-top: 13px;
   }
 }
-.navigation .b-65 {
+.navigation .l-wrapper .b-65 {
   width: 65%;
   min-height: 69px;
 }
 @media only screen and (max-width: 1100px) {
-  .navigation .b-65 {
+  .navigation .l-wrapper .b-65 {
     width: 62%;
   }
 }
 @media only screen and (max-width: 1040px) {
-  .navigation .b-65 {
+  .navigation .l-wrapper .b-65 {
     width: 30%;
   }
 }
-@media only screen and (max-width: 900px) {
-  .navigation .b-65 {
+@media only screen and (max-width: 600px) {
+  .navigation .l-wrapper .b-65 {
     width: 40%;
   }
 }
 @media only screen and (max-width: 500px) {
-  .navigation .b-65 {
+  .navigation .l-wrapper .b-65 {
     width: 100%;
     background-color: #FFF;
     margin-top: -2px;
@@ -128,9 +130,10 @@
 @media only screen and (max-width: 1040px) {
   .menu-mob-btn {
     display: block;
+    right: -6px;
   }
 }
-@media only screen and (max-width: 595px) {
+@media only screen and (max-width: 500px) {
   .menu-mob-btn {
     right: 15px;
   }
