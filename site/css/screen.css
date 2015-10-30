@@ -410,24 +410,22 @@
 }
 
 @media only screen and (max-width: 720px) {
-  .productcategoryT table th, .productcategoryT table td {
-    display: block;
-    font-size: 16px;
+  .productcategoryT {
+    overflow: auto;
   }
   .productcategoryT .thickbox {
     padding: 15px 15px 0 0 !important;
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .productcategory {
+    overflow: auto;
+  }
+}
 @media only screen and (max-width: 620px) {
   .productcategory table th, .productcategory table td {
     font-size: 16px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  .productcategory table th, .productcategory table td {
-    display: block;
-    text-align: center;
   }
 }
 
