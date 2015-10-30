@@ -1,5 +1,4 @@
 // Normally mainpage styles
-
 //ALL
 .l-wrapper
 	img
@@ -17,14 +16,34 @@
 			position: relative
 			top: inherit
 			bottom: inherit
+
 	.l-wrapper
 		min-width: auto
 		+r(360)
 			padding: 0
+
+	.l-category
+		+r(900)
+			display: -webkit-box
+			display: -webkit-flex
+			display: -ms-flexbox
+			display: flex
+			-webkit-box-orient: vertical
+			-webkit-box-direction: reverse
+			-webkit-flex-direction: column-reverse
+			-ms-flex-direction: column-reverse
+				flex-direction: column-reverse	
+			.two-column__main_container
+				margin-bottom: 30px		
+
 	.footer
 		+r(360)
 			padding: 0	
 
+ymaps
+	+r(1005)
+		max-width: 100%
+		height: auto
 
 p#back-top
 	+r(640)
