@@ -408,6 +408,16 @@
   }
 }
 
+@media only screen and (max-width: 720px) {
+  .productcategoryT table th, .productcategoryT table td {
+    display: block;
+    font-size: 16px;
+  }
+  .productcategoryT .thickbox {
+    padding: 15px 15px 0 0 !important;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .product-block {
     width: 48%;
