@@ -51,6 +51,11 @@
   }
 }
 
+@media only screen and (max-width: 1040px) {
+  .navigation {
+    position: relative;
+  }
+}
 .navigation .l-wrapper {
   *zoom: 1;
 }
@@ -183,6 +188,7 @@
 @media only screen and (max-width: 1040px) {
   .header-bg {
     padding: 59px 0 10px;
+    display: none;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -259,7 +265,7 @@
 }
 .menu-mob li a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
 }
 .menu-mob li ul {
@@ -496,6 +502,18 @@
     -webkit-flex-wrap: wrap-reverse;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cleanhtml td {
+    display: block !important;
+    width: 100%;
+  }
+  .cleanhtml td > br {
+    display: none;
+  }
+  .cleanhtml td img {
+    float: none !important;
   }
 }
 

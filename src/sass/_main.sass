@@ -36,6 +36,8 @@ p#back-top
 		right: 21%	
 
 .navigation
+	+r(1040)
+		position: relative
 	.l-wrapper
 		+clr
 		+r(500)
@@ -121,6 +123,7 @@ p#back-top
 .header-bg
 	+r(1040)
 		padding: 59px 0 10px
+		display: none
 	+r(500)
 		padding-top: 127px	
 
@@ -177,7 +180,7 @@ p#back-top
 		padding: 5px 0px 
 		a	
 			color: #fff	
-			font-size: 20px	
+			font-size: 18px	
 			display: block
 		ul
 			display: none	
@@ -311,7 +314,8 @@ contacts__header
 		> table td
 			display: block	
 		td p
-			margin-bottom: 0			
+			margin-bottom: 0	
+		
 
 .ui-tabs .ui-tabs-nav 
 	+r(400)
@@ -347,7 +351,16 @@ contacts__header
 		p:nth-child(2)
 			-webkit-flex-wrap: wrap-reverse
 			-ms-flex-wrap: wrap-reverse
-			flex-wrap: wrap-reverse	
+			flex-wrap: wrap-reverse
+	+r(700)
+		td
+			display: block !important
+			width: 100%
+		td > br	
+			display: none
+
+		td  img	
+			float: none !important
 
 
 .mn2_, .mn2a, .mn2_a
