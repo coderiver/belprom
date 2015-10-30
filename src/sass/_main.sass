@@ -330,16 +330,27 @@ contacts__header
 	+r(900)
 		margin: 0
 		p, li
-			font-size: 14px !important			
-	+r(600)
-		padding: 40px 15px 20px 15px
-
-.news__item_one_content 
+			font-size: 14px !important
 	+r(720)
 		> table td
 			display: block	
 		td p
-			margin-bottom: 0	
+			margin-bottom: 0
+		table p > img, table h3 img	
+			float: none !important
+			display: block !important
+			margin: 10px auto !important
+
+
+	+r(600)
+		padding: 40px 15px 20px 15px
+
+// .news__item_one_content 
+// 	+r(720)
+// 		> table td
+// 			display: block	
+// 		td p
+// 			margin-bottom: 0	
 		
 
 .ui-tabs .ui-tabs-nav 

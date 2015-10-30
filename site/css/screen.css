@@ -477,18 +477,22 @@
     font-size: 14px !important;
   }
 }
-@media only screen and (max-width: 600px) {
-  .news__item_one_content {
-    padding: 40px 15px 20px 15px;
-  }
-}
-
 @media only screen and (max-width: 720px) {
   .news__item_one_content > table td {
     display: block;
   }
   .news__item_one_content td p {
     margin-bottom: 0;
+  }
+  .news__item_one_content table p > img, .news__item_one_content table h3 img {
+    float: none !important;
+    display: block !important;
+    margin: 10px auto !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .news__item_one_content {
+    padding: 40px 15px 20px 15px;
   }
 }
 
