@@ -38,6 +38,7 @@
   p#back-top {
     left: inherit;
     right: 13%;
+    bottom: 20px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -292,7 +293,7 @@
 
 .l-wrapper {
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 1200px) {
@@ -415,6 +416,26 @@
   }
   .productcategoryT .thickbox {
     padding: 15px 15px 0 0 !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .productcategory table th, .productcategory table td {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .productcategory table th, .productcategory table td {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .sort_menu table td {
+    display: block;
+    text-align: center;
+    font-size: 16px;
   }
 }
 

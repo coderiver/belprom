@@ -30,6 +30,7 @@ p#back-top
 	+r(640)
 		left: inherit
 		right: 13%
+		bottom: 20px
 	+r(450)	
 		right: 18%
 	+r(400)
@@ -199,7 +200,8 @@ p#back-top
 
 .l-wrapper
 	position: relative
-	min-width: 320px
+	min-width: 300px
+	//min-width: 320px
 	+box
 	+r(1200)
 		padding: 0 20px
@@ -291,8 +293,23 @@ contacts__header
 			display: block
 			font-size: 16px
 		.thickbox
-			padding: 15px 15px 0 0 !important	
+			padding: 15px 15px 0 0 !important
 
+.productcategory				
+	+r(620)
+		table th, table td
+			font-size: 16px
+	+r(540)
+		table th, table td
+			display: block	
+			text-align: center	
+
+.sort_menu
+	+r(625)
+		table td
+			display: block	
+			text-align: center	
+			font-size: 16px	
 
 .product-block
 	+r(900)
