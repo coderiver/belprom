@@ -1,93 +1,633 @@
-/*
-Error: Illegal nesting: Only properties may be nested beneath properties.
-        on line 36 of c:/Work/belprom/src/sass/_main.sass
-        from line 4 of src/sass/screen.sass
+.l-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.l-wrapper .logo-image {
+  min-width: 210px;
+}
+@media only screen and (max-width: 600px) {
+  .l-wrapper .logo-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .l-wrapper .logo-image {
+    position: relative;
+    top: inherit;
+    bottom: inherit;
+  }
+}
+.l-wrapper .l-wrapper {
+  min-width: auto;
+}
+@media only screen and (max-width: 360px) {
+  .l-wrapper .l-wrapper {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .l-wrapper .l-category {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .l-wrapper .l-category .two-column__main_container {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .l-wrapper .footer {
+    padding: 0;
+  }
+}
 
-31: 			-webkit-box-orient: vertical
-32: 			-webkit-box-direction: reverse
-33: 			-webkit-flex-direction: column-reverse
-34: 			-ms-flex-direction: column-reverse
-35: 				flex-direction: column-reverse	
-36: 			.two-column__main_container
-37: 				margin-bottom: 30px		
-38: 
-39: 	.footer
-40: 		+r(360)
-41: 			padding: 0	
+@media only screen and (max-width: 1005px) {
+  ymaps {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
-Backtrace:
-c:/Work/belprom/src/sass/_main.sass:36
-src/sass/screen.sass:4
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:38:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:24:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/bin/sass:13:in `<top (required)>'
-C:/Ruby22-x64/bin/sass:23:in `load'
-C:/Ruby22-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 36 of c:/Work/belprom/src/sass/_main.sass\A         from line 4 of src/sass/screen.sass\A \A 31: 			-webkit-box-orient: vertical\A 32: 			-webkit-box-direction: reverse\A 33: 			-webkit-flex-direction: column-reverse\A 34: 			-ms-flex-direction: column-reverse\A 35: 				flex-direction: column-reverse	\A 36: 			.two-column__main_container\A 37: 				margin-bottom: 30px		\A 38: \A 39: 	.footer\A 40: 		+r(360)\A 41: 			padding: 0	"; }
+@media only screen and (max-width: 640px) {
+  p#back-top {
+    left: inherit;
+    right: 13%;
+    bottom: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  p#back-top {
+    right: 18%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  p#back-top {
+    right: 21%;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .navigation {
+    position: relative;
+  }
+}
+.navigation .l-wrapper {
+  *zoom: 1;
+}
+.navigation .l-wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 500px) {
+  .navigation .l-wrapper {
+    padding: 0;
+    height: 136px;
+  }
+}
+.navigation .l-wrapper .b-35 {
+  width: 35%;
+  min-height: 69px;
+  position: relative;
+}
+@media only screen and (max-width: 1100px) {
+  .navigation .l-wrapper .b-35 {
+    width: 38%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .navigation .l-wrapper .b-35 {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation .l-wrapper .b-35 {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation .l-wrapper .b-35 {
+    width: 100%;
+  }
+  .navigation .l-wrapper .b-35 .logo {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .navigation .l-wrapper .b-35 .logo {
+    padding-top: 13px;
+  }
+}
+.navigation .l-wrapper .b-65 {
+  width: 65%;
+  min-height: 69px;
+}
+@media only screen and (max-width: 1100px) {
+  .navigation .l-wrapper .b-65 {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .navigation .l-wrapper .b-65 {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation .l-wrapper .b-65 {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation .l-wrapper .b-65 {
+    width: 100%;
+    background-color: #FFF;
+    margin-top: -2px;
+  }
+}
+.navigation .lang {
+  position: absolute;
+  right: 212px;
+}
+.navigation .lang a {
+  position: static;
+}
+.navigation .lang a.active {
+  position: static;
+  margin: 0 0 0 6px;
+}
+@media only screen and (max-width: 1040px) {
+  .navigation .lang {
+    right: 68px;
+    top: 28px;
+  }
+  .navigation .lang a.active {
+    padding: 0 6px 1px;
+  }
+  .navigation .lang a {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .navigation .lang {
+    right: 68px;
+    top: 15px;
+  }
+  .navigation .lang a {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigation .lang {
+    position: absolute;
+    left: 20px;
+    right: inherit;
+    top: 28px;
+  }
+  .navigation .lang a {
+    display: inline-block;
+    font-size: 18px;
+  }
+  .navigation .lang a.active {
+    margin-left: 15px;
+    padding: 3px 6px 4px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #slide_sale {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .header-bg {
+    padding: 59px 0 10px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header-bg {
+    padding-top: 127px;
+  }
+}
+
+.menu-mob-btn {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  border: none;
+  outline: none;
+  background: none;
+}
+@media only screen and (max-width: 1040px) {
+  .menu-mob-btn {
+    display: block;
+    right: -6px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .menu-mob-btn {
+    right: 15px;
+  }
+}
+.menu-mob-btn span {
+  width: 30px;
+  height: 3px;
+  margin: 12px 0;
+  background-color: #333;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+.menu-mob-btn span:before, .menu-mob-btn span:after {
+  content: " ";
+  display: block;
+  background-color: #333;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  transition: all 0.3s;
+}
+.menu-mob-btn span:before {
+  top: -9px;
+}
+.menu-mob-btn span:after {
+  top: 9px;
+}
+
+.menu-mob {
+  float: none;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .menu-mob {
+    top: 136px;
+  }
+}
+.menu-mob li {
+  display: block;
+  text-align: center;
+  padding: 5px 0px;
+}
+.menu-mob li a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+.menu-mob li ul {
+  display: none;
+}
+
+@media only screen and (max-width: 1040px) {
+  .search-form__b {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .top-menu > li {
+    padding: 3px 10px;
+  }
+}
+
+.l-wrapper {
+  position: relative;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 1200px) {
+  .l-wrapper {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .l-wrapper .b-50 {
+    min-height: 374px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .l-wrapper .b-50 {
+    width: 80%;
+    min-height: auto;
+    float: none;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .l-wrapper .b-50 {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .l-wrapper .home-menu__item br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .l-wrapper .home-menu__item {
+    margin: 15px 0 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .l-wrapper .home-menu__on_hover {
+    min-height: 130px;
+    padding-bottom: 10px;
+  }
+  .l-wrapper .home-menu__on_hover li {
+    position: relative;
+  }
+  .l-wrapper .home-menu__on_hover li .sq {
+    position: absolute;
+  }
+  .l-wrapper .home-menu__on_hover a {
+    padding-left: 15px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .l-wrapper .home-menu__on_hover {
+    min-height: 184px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .l-wrapper .home-menu__on_hover {
+    min-height: auto;
+  }
+  .l-wrapper .home-menu__on_hover li > .sq {
+    top: 0;
+  }
+  .l-wrapper .home-menu__on_hover br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .l-wrapper .home-menu__on_hover_sub > li {
+    display: block !important;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .l-wrapper .home-menu__on_hover_sub > li a {
+    font-size: 13px;
+    margin-bottom: 13;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .two-column__sidebar {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contacts__content {
+    padding: 10px 20px 10px;
+  }
+  .contacts__content p {
+    margin-bottom: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  contacts__header {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .two-column__main_container {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .two-column__content {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .productcategoryT {
+    overflow: auto;
+  }
+  .productcategoryT .thickbox {
+    padding: 15px 15px 0 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .productcategory {
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .productcategory table th, .productcategory table td {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .sort_menu table td {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-block {
+    width: 48%;
+    margin: 0 1% 20px;
+  }
+  .product-block .product-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .product-block {
+    width: 100%;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .product-block .product-title a {
+    font-size: 16px;
+  }
+}
+
+.news__item {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.news__item .linkk {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .news__item_one_content {
+    margin: 0;
+  }
+  .news__item_one_content p, .news__item_one_content li {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .news__item_one_content > table td {
+    display: block;
+  }
+  .news__item_one_content td p {
+    margin-bottom: 0;
+  }
+  .news__item_one_content table p > img, .news__item_one_content table h3 img {
+    float: none !important;
+    display: block !important;
+    margin: 10px auto !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .news__item_one_content {
+    padding: 40px 15px 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .ui-tabs .ui-tabs-nav li {
+    float: none;
+  }
+  .ui-tabs .ui-tabs-nav li a {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cleanhtml table {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cleanhtml p {
+    font-size: 14px !important;
+  }
+  .cleanhtml p:nth-child(2) {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -webkit-justify-content--ms-flex-pack: distribute;
+    -webkit-justify-content--ms-flex-pack-justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .cleanhtml p:nth-child(2) {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cleanhtml td {
+    display: block !important;
+    width: auto;
+  }
+  .cleanhtml td > br {
+    display: none;
+  }
+  .cleanhtml td img {
+    float: none !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .mn2_, .mn2a, .mn2_a {
+    float: none;
+    width: 100%;
+  }
+  .mn2_ a, .mn2a a, .mn2_a a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0;
+    font-size: 14px !important;
+  }
+  .mn2_ a:hover, .mn2_ a:focus, .mn2a a:hover, .mn2a a:focus, .mn2_a a:hover, .mn2_a a:focus {
+    display: block;
+    width: 100%;
+    font-size: 14px !important;
+  }
+  .mn2_ .mn2img, .mn2a .mn2img, .mn2_a .mn2img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  ul.page-categories li, ul.page-categoriesShini li {
+    width: 100%;
+    margin: 0 auto 15px;
+    height: auto;
+    min-height: 160px;
+  }
+  ul.page-categories a, ul.page-categoriesShini a {
+    font-size: 18px;
+  }
+  ul.page-categories h2, ul.page-categoriesShini h2 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  ul.page-categories li, ul.page-categoriesShini li {
+    min-height: 190px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer__copyright {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-links a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+
 
 /*# sourceMappingURL=screen.css.map */
