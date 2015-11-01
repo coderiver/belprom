@@ -360,8 +360,18 @@ contacts__header
 		margin-left: -8px !important
 
 .news__item_one_content
+	+r(1055)
+		> img
+			display: block
+			margin: auto
+	+r(1051)
+		td > p > img
+			margin: 0 auto 
+			display: block
 	+r(900)
 		margin: 0
+		table
+			width: 100% !important
 		p, li
 			font-size: 14px !important
 		iframe
@@ -380,6 +390,7 @@ contacts__header
 		> table td
 			display: block	
 			width: 100%
+			text-align: center
 		td p
 			margin-bottom: 0
 		table p > img, table h3 img	
@@ -447,6 +458,19 @@ contacts__header
 
 		td  img	
 			float: none !important
+
+.mn2_a, .mn2_ table .mn2a, .mn2_a:hover
+	+r(1143)
+		height: 100px
+
+	+r(963)
+		height: 120px	
+
+	+r(720)
+		height: 70px
+
+	+r(400)
+		height: 90px		
 
 
 .mn2_, .mn2a, .mn2_a
