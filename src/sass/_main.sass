@@ -357,6 +357,7 @@ contacts__header
 	+prevent-text	
 	.linkk
 		width: 100%	
+		margin-left: -8px !important
 
 .news__item_one_content
 	+r(900)
@@ -370,6 +371,7 @@ contacts__header
 
 		> div 	
 			width: 100% !important
+			height: auto !important
 
 			img
 				margin: 0 !important
@@ -377,6 +379,7 @@ contacts__header
 	+r(720)
 		> table td
 			display: block	
+			width: 100%
 		td p
 			margin-bottom: 0
 		table p > img, table h3 img	
@@ -417,6 +420,7 @@ contacts__header
 	+r(900)
 		p
 			font-size: 14px !important
+			+prevent-text
 
 		p:nth-child(2)
 			display: -webkit-flex
@@ -463,6 +467,11 @@ contacts__header
 			font-size: 14px	!important
 		.mn2img
 			display: none	
+.mn2_
+	+r(720)
+		.linkk	
+			display: block	
+
 
 
 				
