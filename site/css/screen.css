@@ -631,6 +631,11 @@
     min-height: 190px;
   }
 }
+@media only screen and (max-width: 400px) {
+  ul.page-categories li, ul.page-categoriesShini li {
+    min-height: 220px;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   .footer__copyright {
