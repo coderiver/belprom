@@ -221,7 +221,7 @@
 }
 @media only screen and (max-width: 500px) {
   .header-bg {
-    padding-top: 127px;
+    display: block;
   }
 }
 
