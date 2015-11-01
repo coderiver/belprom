@@ -509,6 +509,12 @@
     margin: 20px auto;
     display: block;
   }
+  .news__item_one_content > div {
+    width: 100% !important;
+  }
+  .news__item_one_content > div img {
+    margin: 0 !important;
+  }
 }
 @media only screen and (max-width: 720px) {
   .news__item_one_content > table td {
