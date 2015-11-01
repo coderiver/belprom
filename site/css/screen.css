@@ -626,6 +626,18 @@
   .cleanhtml td img {
     float: none !important;
   }
+  .cleanhtml #tabledata {
+    overflow: scroll;
+  }
+  .cleanhtml #tabledata td {
+    display: table-cell !important;
+  }
+  .cleanhtml #propertytable {
+    overflow: scroll;
+  }
+  .cleanhtml #propertytable td {
+    display: table-cell !important;
+  }
 }
 
 @media only screen and (max-width: 1143px) {
