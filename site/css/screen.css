@@ -49,8 +49,15 @@
 
 @media only screen and (max-width: 1005px) {
   ymaps {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1005px) {
+  ymaps .ymaps-2-1-29-button_size_s .ymaps-2-1-29-button__text {
+    width: 30px;
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -514,6 +521,17 @@
 @media only screen and (max-width: 600px) {
   .news__item_one_content {
     padding: 40px 15px 20px 15px;
+  }
+}
+@media only screen and (max-width: 545px) {
+  .news__item_one_content .spoiler + hr + br + div {
+    width: auto !important;
+  }
+  .news__item_one_content h2 + p + form td {
+    display: block;
+  }
+  .news__item_one_content textarea {
+    width: 100%;
   }
 }
 

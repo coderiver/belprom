@@ -43,8 +43,14 @@
 
 ymaps
 	+r(1005)
-		max-width: 100%
-		height: auto
+		max-width: 100% !important
+		margin: auto
+
+	+r(1005)
+		.ymaps-2-1-29-button_size_s .ymaps-2-1-29-button__text
+			width: 30px
+			padding: 0
+			text-align: center	
 
 p#back-top
 	+r(640)
@@ -371,12 +377,15 @@ contacts__header
 	+r(600)
 		padding: 40px 15px 20px 15px
 
-// .news__item_one_content 
-// 	+r(720)
-// 		> table td
-// 			display: block	
-// 		td p
-// 			margin-bottom: 0	
+	+r(545)
+		.spoiler + hr + br + div      // NEED CHANGE THIS CODE AND ADD CLASS
+			width: auto !important	
+
+		h2 + p + form td    // NEED CHANGE THIS CODE AND ADD CLASS
+			display: block
+
+		textarea
+			width: 100%		
 		
 
 .ui-tabs .ui-tabs-nav 
