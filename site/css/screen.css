@@ -504,6 +504,11 @@
   .news__item_one_content p, .news__item_one_content li {
     font-size: 14px !important;
   }
+  .news__item_one_content iframe {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
 }
 @media only screen and (max-width: 720px) {
   .news__item_one_content > table td {
