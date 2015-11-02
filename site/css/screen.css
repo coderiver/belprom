@@ -610,6 +610,11 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 440px) {
+  .news__item_one_content table p > img {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .ui-tabs .ui-tabs-nav li {
