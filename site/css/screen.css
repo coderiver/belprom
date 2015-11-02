@@ -528,7 +528,7 @@
 }
 .news__item .linkk {
   width: 100%;
-  margin-left: -8px !important;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -722,6 +722,9 @@
   }
 }
 
+.mn2_a, .mn2_ table .mn2a, .mn2_a:hover {
+  box-sizing: border-box;
+}
 @media only screen and (max-width: 1143px) {
   .mn2_a, .mn2_ table .mn2a, .mn2_a:hover {
     height: 100px;
