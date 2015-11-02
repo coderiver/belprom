@@ -427,12 +427,44 @@
     float: none;
     margin: 0;
   }
+  .two-column__main_container .two-column__content_category {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .two-column__content {
     margin: 0;
     padding: 0;
+  }
+  .two-column__content > * {
+    float: none !important;
+    margin-top: 0 !important;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .two-column__content .gc-search > * {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bread-menu > li {
+    display: none;
+  }
+  .bread-menu > li:nth-child(2) {
+    display: inline-block;
+  }
+  .bread-menu > li a {
+    padding: 5px 11px;
+  }
+  .bread-menu ul {
+    top: 27px;
+  }
+  .bread-menu .fa {
+    display: none;
   }
 }
 
@@ -468,6 +500,7 @@
   .product-block {
     width: 48%;
     margin: 0 1% 20px;
+    min-height: 210px;
   }
   .product-block .product-link {
     display: none;
@@ -498,10 +531,15 @@
   margin-left: -8px !important;
 }
 
+@media only screen and (max-width: 1200px) {
+  .news__item_one_content #req_form {
+    overflow-x: auto;
+  }
+}
 @media only screen and (max-width: 1055px) {
   .news__item_one_content > img {
     display: block;
-    margin: auto;
+    margin: auto !important;
   }
 }
 @media only screen and (max-width: 1051px) {
@@ -525,12 +563,20 @@
     margin: 20px auto;
     display: block;
   }
-  .news__item_one_content > div {
+  .news__item_one_content > div, .news__item_one_content strong {
     width: 100% !important;
     height: auto !important;
+    float: none !important;
   }
-  .news__item_one_content > div img {
-    margin: 0 !important;
+  .news__item_one_content > div img, .news__item_one_content strong img {
+    margin: 0 auto 10px !important;
+    display: block !important;
+    float: none !important;
+  }
+  .news__item_one_content > * {
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -588,6 +634,9 @@
 @media only screen and (max-width: 900px) {
   .cleanhtml p {
     font-size: 14px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-indent: 0 !important;
     -ms-word-break: break-all;
     word-break: break-all;
     word-break: break-word;
@@ -596,16 +645,16 @@
     -ms-hyphens: auto;
     hyphens: auto;
   }
-  .cleanhtml p:nth-child(2) {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -webkit-justify-content--ms-flex-pack: distribute;
-    -webkit-justify-content--ms-flex-pack-justify-content: space-around;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  .cleanhtml > * {
+    float: none !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .cleanhtml > img {
+    width: auto !important;
+  }
+  .cleanhtml iframe {
+    min-height: 650px;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -637,6 +686,24 @@
   }
   .cleanhtml #propertytable td {
     display: table-cell !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cleanhtml div > img {
+    float: none !important;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .bottom-block .bottom-contacts {
+    float: none !important;
+    width: 100% !important;
+  }
+  .bottom-block .bottom-contacts-block {
+    float: none !important;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -689,8 +756,11 @@
 }
 
 @media only screen and (max-width: 900px) {
+  ul.page-categories, ul.page-categoriesShini {
+    display: block;
+  }
   ul.page-categories li, ul.page-categoriesShini li {
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto 15px;
     height: auto;
     min-height: 160px;
@@ -705,6 +775,12 @@
 @media only screen and (max-width: 600px) {
   ul.page-categories li, ul.page-categoriesShini li {
     min-height: 190px;
+  }
+  ul.page-categories li img, ul.page-categoriesShini li img {
+    margin: 5px auto;
+  }
+  ul.page-categories span, ul.page-categoriesShini span {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 400px) {

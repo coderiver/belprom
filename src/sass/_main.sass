@@ -302,17 +302,39 @@ contacts__header
 	+r(900)
 		float: none
 		margin: 0
+		.two-column__content_category
+			padding-left: 0
+			padding-right: 0
 .two-column__content
 	+r(900)
 		margin: 0
 		padding: 0
-		// .bread-menu 
-		// 	li
-		// 		display: none
-		// 		&:first-child
-		// 			display: block
-		// 	.fa
-		// 		display: none
+
+		> *
+			float: none !important
+			margin-top: 0 !important
+			width: 100%
+
+	+r(600)
+		.gc-search
+			> *
+				margin-bottom: 20px !important
+
+.bread-menu 
+	+r(900)
+		> li
+			display: none
+			&:nth-child(2)
+				display: inline-block
+			a
+				padding: 5px 11px
+
+		ul	
+			top: 27px
+
+		.fa
+			display: none				
+
 .productcategoryT
 	+r(720)
 		// table th, table td
@@ -344,6 +366,7 @@ contacts__header
 	+r(900)
 		width: 48%
 		margin:	0 1% 20px
+		min-height: 210px
 		.product-link
 			display: none
 	+r(700)
@@ -360,10 +383,14 @@ contacts__header
 		margin-left: -8px !important
 
 .news__item_one_content
+	+r(1200)
+		#req_form
+			overflow-x: auto 
+
 	+r(1055)
 		> img
 			display: block
-			margin: auto
+			margin: auto !important
 	+r(1051)
 		td > p > img
 			margin: 0 auto 
@@ -379,12 +406,21 @@ contacts__header
 			margin: 20px auto
 			display: block
 
-		> div 	
+		> div, strong 	
 			width: 100% !important
 			height: auto !important
+			float: none !important
 
 			img
-				margin: 0 !important
+				margin: 0 auto 10px !important
+				display: block !important
+				float: none !important
+
+		> *	
+			float: none !important	
+			margin-left: auto
+			margin-right: auto
+
 
 	+r(720)
 		> table td
@@ -431,18 +467,33 @@ contacts__header
 	+r(900)
 		p
 			font-size: 14px !important
+			margin-left: 0 !important
+			margin-right: 0 !important
+			text-indent: 0 !important
 			+prevent-text
 
 		p:nth-child(2)
-			display: -webkit-flex
-			display: -ms-flexbox
-			display: flex
-			-webkit-justify-content: space-around
-				-ms-flex-pack: distribute
-					justify-content: space-around
-			-webkit-flex-wrap: wrap
-			-ms-flex-wrap: wrap
-			flex-wrap: wrap
+			// display: -webkit-flex
+			// display: -ms-flexbox
+			// display: flex
+			// -webkit-justify-content: space-around
+			// 	-ms-flex-pack: distribute
+			// 		justify-content: space-around
+			// -webkit-flex-wrap: wrap
+			// -ms-flex-wrap: wrap
+			// flex-wrap: wrap
+
+
+		> *	
+			float: none !important
+			height: auto !important
+			width: 100% !important
+
+		> img
+			width: auto !important	
+
+		iframe
+			min-height: 650px	
 		
 	+r(770)
 		p:nth-child(2)
@@ -468,6 +519,23 @@ contacts__header
 			overflow: scroll
 			td
 				display: table-cell !important
+
+	+r(600)
+		div > img
+			float: none !important
+			display: block
+
+.bottom-block
+	+r(900)
+		.bottom-contacts
+			float: none	!important
+			width: 100% !important
+
+		.bottom-contacts-block
+			float: none !important
+			width: 100%		
+			+box		
+
 
 .mn2_a, .mn2_ table .mn2a, .mn2_a:hover
 	+r(1143)
@@ -514,8 +582,9 @@ contacts__header
 //BEGIN category
 ul.page-categories, ul.page-categoriesShini 
 	+r(900)
+		display: block
 		li
-			width: 100%
+			width: 100% !important
 			margin: 0 auto 15px
 			height: auto
 			min-height: 160px
@@ -527,9 +596,17 @@ ul.page-categories, ul.page-categoriesShini
 		li	
 			min-height: 190px	
 
+			img
+				margin: 5px auto
+
+		span	
+			font-size: 14px	
+
 	+r(400)
 		li
 			min-height: 220px
+
+
 
 //ENDcategory
 
