@@ -584,6 +584,7 @@
     display: block;
     width: 100%;
     text-align: center;
+    padding: 8px 0;
   }
   .news__item_one_content td p {
     margin-bottom: 0;
@@ -592,6 +593,9 @@
     float: none !important;
     display: block !important;
     margin: 10px auto !important;
+  }
+  .news__item_one_content colgroup {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -607,6 +611,9 @@
     display: block;
   }
   .news__item_one_content textarea {
+    width: 100%;
+  }
+  .news__item_one_content td > p img {
     width: 100%;
   }
 }
@@ -693,7 +700,7 @@
     display: table-cell !important;
   }
   .cleanhtml colgroup {
-    display: block;
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {

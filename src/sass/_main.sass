@@ -427,6 +427,7 @@ contacts__header
 			display: block	
 			width: 100%
 			text-align: center
+			padding: 8px 0
 		td p
 			margin-bottom: 0
 		table p > img, table h3 img	
@@ -434,19 +435,26 @@ contacts__header
 			display: block !important
 			margin: 10px auto !important
 
+		colgroup
+			display: none	
+
 
 	+r(600)
 		padding: 40px 15px 20px 15px
 
 	+r(545)
-		.spoiler + hr + br + div      // NEED CHANGE THIS CODE AND ADD CLASS
+		.spoiler + hr + br + div     
 			width: auto !important	
 
-		h2 + p + form td    // NEED CHANGE THIS CODE AND ADD CLASS
+		h2 + p + form td    
 			display: block
 
 		textarea
-			width: 100%		
+			width: 100%
+
+		td > p 
+			img	
+				width: 100%		
 
 	+r(440)
 		table 
@@ -528,7 +536,7 @@ contacts__header
 				display: table-cell !important
 
 		colgroup 
-			display: block			
+			display: none		
 
 	+r(600)
 		div > img
