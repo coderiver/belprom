@@ -763,6 +763,9 @@ p#back-top a {
   .cleanhtml {
     overflow: hidden;
   }
+  .cleanhtml td > img[width='300'] {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
