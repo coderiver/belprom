@@ -113,6 +113,9 @@
   }
 }
 
+p#back-top a {
+  width: auto !important;
+}
 @media only screen and (max-width: 640px) {
   p#back-top {
     left: inherit;
