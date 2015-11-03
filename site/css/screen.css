@@ -119,18 +119,8 @@ p#back-top a {
 @media only screen and (max-width: 640px) {
   p#back-top {
     left: inherit;
-    right: 13%;
+    right: 35px;
     bottom: 20px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  p#back-top {
-    right: 18%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  p#back-top {
-    right: 21%;
   }
 }
 
@@ -869,6 +859,12 @@ p#back-top a {
 @media only screen and (max-width: 400px) {
   ul.page-categories li, ul.page-categoriesShini li {
     min-height: 220px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.page-categoriesShini h2 {
+    height: 70px;
   }
 }
 
