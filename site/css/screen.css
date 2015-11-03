@@ -736,6 +736,7 @@
   .cleanhtml td {
     display: block !important;
     width: auto;
+    height: auto !important;
   }
   .cleanhtml td > br {
     display: none;
@@ -763,6 +764,11 @@
   .cleanhtml div > img {
     float: none !important;
     display: block;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cleanhtml {
+    overflow: hidden;
   }
 }
 
