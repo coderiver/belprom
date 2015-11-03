@@ -513,11 +513,15 @@
     padding: 5px 11px;
   }
   .bread-menu ul {
-    top: 27px;
+    top: 40px;
+    list-style: none;
   }
   .bread-menu .fa {
     display: none;
   }
+}
+.bread-menu li > ul.is-active {
+  display: block;
 }
 
 @media only screen and (max-width: 720px) {
