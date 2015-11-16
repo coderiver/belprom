@@ -13,14 +13,16 @@
     margin: auto;
   }
 }
+@media only screen and (max-width: 500px) {
+  .l-wrapper .logo-image {
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 410px) {
   .l-wrapper .logo-image {
     position: relative;
     top: inherit;
     bottom: inherit;
-  }
-  .l-wrapper .logo-image img {
-    width: 300px;
   }
 }
 .l-wrapper .l-wrapper {
