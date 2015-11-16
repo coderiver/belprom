@@ -8,7 +8,7 @@
 @media only screen and (max-width: 600px) {
   .l-wrapper .logo-image {
     position: absolute;
-    top: 0;
+    top: -9px;
     bottom: 0;
     margin: auto;
   }
@@ -18,6 +18,9 @@
     position: relative;
     top: inherit;
     bottom: inherit;
+  }
+  .l-wrapper .logo-image img {
+    width: 300px;
   }
 }
 .l-wrapper .l-wrapper {
@@ -200,6 +203,8 @@ p#back-top a {
     width: 100%;
     background-color: #FFF;
     margin-top: -2px;
+    margin-top: -75px;
+    width: 60px;
   }
 }
 .navigation .lang {
@@ -241,6 +246,7 @@ p#back-top a {
     left: 20px;
     right: inherit;
     top: 28px;
+    display: none;
   }
   .navigation .lang a {
     display: inline-block;
@@ -267,6 +273,7 @@ p#back-top a {
 @media only screen and (max-width: 500px) {
   .header-bg {
     display: block;
+    display: none;
   }
 }
 
@@ -329,6 +336,7 @@ p#back-top a {
 @media only screen and (max-width: 500px) {
   .menu-mob {
     top: 136px;
+    top: 68px;
   }
 }
 .menu-mob li {
