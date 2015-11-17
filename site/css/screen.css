@@ -145,7 +145,6 @@ p#back-top a {
 @media only screen and (max-width: 500px) {
   .navigation .l-wrapper {
     padding: 0;
-    height: 136px;
   }
 }
 .navigation .l-wrapper .b-35 {
@@ -911,12 +910,6 @@ p#back-top a {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .footer {
-    margin: 0 -40px;
   }
 }
 
