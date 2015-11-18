@@ -217,6 +217,7 @@ p#back-top
 .twrp
 	overflow: auto
 	padding: 20px 0	
+	clear: both
 	
 	> table 
 		min-width: 800px	
@@ -494,14 +495,13 @@ contacts__header
 			float: none !important
 
 			img
-				margin: 0 auto 10px !important
-				display: block !important
-				float: none !important
+				margin: 0 15px 15px 0 !important
 
 		> *	
 			float: none !important	
 			margin-left: auto
 			margin-right: auto
+			clear: both
 
 
 	+r(720)
@@ -560,6 +560,10 @@ contacts__header
 	+r(1200)
 		table
 			width: 100% !important
+	+r(1000)
+		> *	
+			clear: both !important
+
 	+r(900)
 		p
 			font-size: 14px !important
@@ -567,18 +571,6 @@ contacts__header
 			margin-right: 0 !important
 			text-indent: 0 !important
 			+prevent-text
-
-		p:nth-child(2)
-			// display: -webkit-flex
-			// display: -ms-flexbox
-			// display: flex
-			// -webkit-justify-content: space-around
-			// 	-ms-flex-pack: distribute
-			// 		justify-content: space-around
-			// -webkit-flex-wrap: wrap
-			// -ms-flex-wrap: wrap
-			// flex-wrap: wrap
-
 
 		> *	
 			float: none !important
@@ -598,9 +590,9 @@ contacts__header
 			flex-wrap: wrap-reverse
 	+r(700)
 		td
-			display: block !important
-			width: auto
-			height: auto !important
+			// display: block !important
+			// width: auto
+			// height: auto !important
 		td > br	
 			display: none
 

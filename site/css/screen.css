@@ -269,6 +269,7 @@ p#back-top a {
 .twrp {
   overflow: auto;
   padding: 20px 0;
+  clear: both;
 }
 .twrp > table {
   min-width: 800px;
@@ -636,14 +637,13 @@ p#back-top a {
     float: none !important;
   }
   .news__item_one_content > div img, .news__item_one_content strong img {
-    margin: 0 auto 10px !important;
-    display: block !important;
-    float: none !important;
+    margin: 0 15px 15px 0 !important;
   }
   .news__item_one_content > * {
     float: none !important;
     margin-left: auto;
     margin-right: auto;
+    clear: both;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -704,6 +704,11 @@ p#back-top a {
     width: 100% !important;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .cleanhtml > * {
+    clear: both !important;
+  }
+}
 @media only screen and (max-width: 900px) {
   .cleanhtml p {
     font-size: 14px !important;
@@ -738,11 +743,6 @@ p#back-top a {
   }
 }
 @media only screen and (max-width: 700px) {
-  .cleanhtml td {
-    display: block !important;
-    width: auto;
-    height: auto !important;
-  }
   .cleanhtml td > br {
     display: none;
   }
