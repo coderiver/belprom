@@ -268,7 +268,7 @@ p#back-top a {
 
 .twrp {
   overflow: auto;
-  padding: 20px 0;
+  margin: 20px 0;
   clear: both;
 }
 .twrp > table {
