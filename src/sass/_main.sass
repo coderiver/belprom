@@ -495,7 +495,9 @@ contacts__header
 			float: none !important
 
 			img
-				margin: 0 15px 15px 0 !important
+				margin: 0 auto 10px !important
+				display: block !important
+				float: none !important
 
 		> *	
 			float: none !important	
@@ -560,10 +562,6 @@ contacts__header
 	+r(1200)
 		table
 			width: 100% !important
-	+r(1000)
-		> *	
-			clear: both !important
-
 	+r(900)
 		p
 			font-size: 14px !important
@@ -571,6 +569,18 @@ contacts__header
 			margin-right: 0 !important
 			text-indent: 0 !important
 			+prevent-text
+
+		p:nth-child(2)
+			// display: -webkit-flex
+			// display: -ms-flexbox
+			// display: flex
+			// -webkit-justify-content: space-around
+			// 	-ms-flex-pack: distribute
+			// 		justify-content: space-around
+			// -webkit-flex-wrap: wrap
+			// -ms-flex-wrap: wrap
+			// flex-wrap: wrap
+
 
 		> *	
 			float: none !important
@@ -687,29 +697,19 @@ ul.page-categories, ul.page-categoriesShini
 			width: 100% !important
 			margin: 0 auto 15px
 			height: auto
-			min-height: 160px
 		a	
 			font-size: 18px
 		h2	
 			font-size: 15px
+			height: auto !important
 	+r(600)
 		li	
-			min-height: 190px	
-
 			img
 				margin: 5px auto
 
 		span	
 			font-size: 14px	
 
-	+r(400)
-		li
-			min-height: 220px
-
-ul.page-categoriesShini 
-	+r(400)
-		h2
-			height: 70px
 
 //ENDcategory
 
