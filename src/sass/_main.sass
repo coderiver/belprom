@@ -216,8 +216,7 @@ p#back-top
 
 .twrp
 	overflow: auto
-	margin: 20px 0	
-	clear: both
+	padding: 20px 0	
 	
 	> table 
 		min-width: 800px	
@@ -503,7 +502,6 @@ contacts__header
 			float: none !important	
 			margin-left: auto
 			margin-right: auto
-			clear: both
 
 
 	+r(720)
@@ -600,9 +598,9 @@ contacts__header
 			flex-wrap: wrap-reverse
 	+r(700)
 		td
-			// display: block !important
-			// width: auto
-			// height: auto !important
+			display: block !important
+			width: auto
+			height: auto !important
 		td > br	
 			display: none
 
@@ -697,19 +695,29 @@ ul.page-categories, ul.page-categoriesShini
 			width: 100% !important
 			margin: 0 auto 15px
 			height: auto
+			min-height: 160px
 		a	
 			font-size: 18px
 		h2	
 			font-size: 15px
-			height: auto !important
 	+r(600)
 		li	
+			min-height: 190px	
+
 			img
 				margin: 5px auto
 
 		span	
 			font-size: 14px	
 
+	+r(400)
+		li
+			min-height: 220px
+
+ul.page-categoriesShini 
+	+r(400)
+		h2
+			height: 70px
 
 //ENDcategory
 
