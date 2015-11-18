@@ -266,6 +266,14 @@ p#back-top a {
   }
 }
 
+.twrp {
+  overflow: auto;
+  padding: 20px 0;
+}
+.twrp > table {
+  min-width: 800px;
+}
+
 @media only screen and (max-width: 1040px) {
   .header-bg {
     padding: 59px 0 10px;
@@ -639,12 +647,6 @@ p#back-top a {
   }
 }
 @media only screen and (max-width: 720px) {
-  .news__item_one_content > table td {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 8px 0;
-  }
   .news__item_one_content td p {
     margin-bottom: 0;
   }
