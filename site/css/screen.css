@@ -941,6 +941,11 @@ div[style*='height: 70px; width: 150px'] + div[style*='cc0033'] {
   position: relative;
   z-index: 10;
 }
+@media only screen and (max-width: 640px) {
+  .catalogdrop {
+    display: none;
+  }
+}
 .catalogdrop li {
   position: relative;
 }
