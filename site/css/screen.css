@@ -134,6 +134,8 @@ p#back-top a {
     right: 35px;
     bottom: 20px;
     display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
