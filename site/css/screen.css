@@ -133,6 +133,7 @@ p#back-top a {
     left: inherit;
     right: 35px;
     bottom: 20px;
+    display: none;
   }
 }
 
@@ -879,6 +880,14 @@ p#back-top a {
   ul.page-categories span, ul.page-categoriesShini span {
     font-size: 14px;
   }
+}
+
+div[style*='height: 70px; width: 150px'] {
+  float: left !important;
+  width: 40% !important;
+}
+div[style*='height: 70px; width: 150px'] + div[style*='cc0033'] {
+  float: right !important;
 }
 
 @media only screen and (max-width: 900px) {
