@@ -14,6 +14,10 @@
 			margin: auto
 		+r(500)
 			width: 300px 
+		+r(400)
+			width: 225px 
+			position: relative
+			top: 3px !important
 		+r(410)
 			position: relative
 			top: inherit
@@ -215,12 +219,18 @@ p#back-top
 		display: none
 
 .twrp
-	overflow: auto
-	margin: 20px 0	
-	
-	> table 
-		min-width: 800px	
+	+r(600)
+		overflow: auto
+		margin: 20px 0	
+		> table 
+			min-width: 800px	
 
+.feedback
+	+r(700)
+		tr,td
+			display: block !important
+			margin-bottom: 5px 
+			padding: 0 
 //BEGIN HOME PAGE
 //navigation
 .header-bg

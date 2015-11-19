@@ -18,6 +18,13 @@
     width: 300px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .l-wrapper .logo-image {
+    width: 225px;
+    position: relative;
+    top: 3px !important;
+  }
+}
 @media only screen and (max-width: 410px) {
   .l-wrapper .logo-image {
     position: relative;
@@ -266,12 +273,22 @@ p#back-top a {
   }
 }
 
-.twrp {
-  overflow: auto;
-  margin: 20px 0;
+@media only screen and (max-width: 600px) {
+  .twrp {
+    overflow: auto;
+    margin: 20px 0;
+  }
+  .twrp > table {
+    min-width: 800px;
+  }
 }
-.twrp > table {
-  min-width: 800px;
+
+@media only screen and (max-width: 700px) {
+  .feedback tr, .feedback td {
+    display: block !important;
+    margin-bottom: 5px;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
