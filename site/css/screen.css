@@ -999,11 +999,11 @@ div[style*='height: 70px; width: 150px'] + div[style*='cc0033'] {
   list-style: none;
   padding: 0;
   position: absolute;
-  left: 200px;
+  left: 225px;
   top: 0;
   display: none;
   background: #ccc;
-  width: 200px;
+  width: 225px;
 }
 .catalogdrop ul a {
   display: block;
