@@ -382,12 +382,25 @@ p#back-top
 		float: none
 		width: 100%
 
+.two-column__sidebar .contacts
+	display: none
 .contacts__content
+	-webkit-column-count: 3
+	column-count: 3
+	-webkit-column-gap: 20px
+	column-gap: 20px
+	+r(700)
+		-webkit-column-count: 0
+		column-count: 0
+	.contacts__description
+		-webkit-column-break-before: always
+		column-break-before: always
+	.contacts
 	+r(900)
 		padding: 10px 20px 10px
 		p
 			margin-bottom: 18px	
-contacts__header
+.contacts__header
 	+r(900)
 		padding: 10px				
 
