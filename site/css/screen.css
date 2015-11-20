@@ -559,6 +559,9 @@ p#back-top a {
 }
 
 @media only screen and (max-width: 900px) {
+  .bread-menu > li {
+    display: none;
+  }
   .bread-menu > li:nth-child(2) {
     display: inline-block;
   }
