@@ -1,6 +1,8 @@
-.l-wrapper img {
-  max-width: 100%;
-  height: auto;
+@media only screen and (max-width: 600px) {
+  .l-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .l-wrapper .logo-image {
   min-width: 210px;
@@ -534,9 +536,6 @@ p#back-top a {
 }
 
 @media only screen and (max-width: 900px) {
-  .bread-menu > li {
-    display: none;
-  }
   .bread-menu > li:nth-child(2) {
     display: inline-block;
   }

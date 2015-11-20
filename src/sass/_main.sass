@@ -2,8 +2,9 @@
 //ALL
 .l-wrapper
 	img
-		max-width: 100%
-		height: auto
+		+r(600)
+			max-width: 100%
+			height: auto
 		
 	.logo-image	
 		min-width: 210px
@@ -415,7 +416,7 @@ contacts__header
 .bread-menu 
 	+r(900)
 		> li
-			display: none
+			// display: none
 			&:nth-child(2)
 				display: inline-block
 			a
