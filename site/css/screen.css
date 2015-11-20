@@ -584,6 +584,9 @@ p#back-top a {
   .productcategoryT {
     overflow: auto;
   }
+  .productcategoryT tbody td, .productcategoryT tbody tr {
+    display: block;
+  }
   .productcategoryT .thickbox {
     padding: 15px 15px 0 0 !important;
   }
