@@ -592,6 +592,12 @@ p#back-top a {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .slide_slider_inner {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .productcategory {
     overflow: auto;
